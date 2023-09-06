@@ -11,6 +11,8 @@
   "author": "Laurent Payot",
   "license": "MIT",
   "devDependencies": {
-    "gren-lang": "^0.3.0"
+    "gren-lang": "^0.3.0",
+    "vite": "^4.4.9",
+    "vite-plugin-gren": "github:laurentpayot/vite-plugin-gren"
   }
 }
