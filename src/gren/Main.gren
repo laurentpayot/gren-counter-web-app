@@ -1,0 +1,55 @@
+module Main exposing (main)
+
+import Browser exposing (Document)
+import Html exposing (Html, text, div, span, button)
+import Html.Attributes exposing (id)
+import Html.Events exposing (onClick)
+
+main : Program {} Model Msg
+main =
+    Browser.document
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = \_ -> Sub.none
+        }
+
+type alias Flags =
+    {}
+
+type alias Model =
+    { counter : Int }
+
+init : Flags -> { model : Model, command : Cmd msg }
+init _ =
+    { model = { counter = 0 }
+    , command = Cmd.none
+    }
+
+type Msg
+    = Clicked
+
+update : Msg -> Model -> { command : Cmd Msg, model : Model }
+update msg model =
+    case msg of
+        Clicked ->
+            { model = { model | counter = model.counter + 1 }
+            , command = Cmd.none
+            }
+
+view : Model -> Document Msg
+view model =
+    { title = "Counter web app in Gren"
+    , body =
+        [ div []
+            [ span
+                [ id "count" ]
+                [ text <| String.fromInt model.counter ]
+            , button
+                [ id "increase-count"
+                , onClick Clicked
+                ]
+                [ text "Count" ]
+            ]
+        ]
+    }

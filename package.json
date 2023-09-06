@@ -1,0 +1,16 @@
+{
+  "name": "gren-counter-web-app",
+  "version": "0.0.1",
+  "description": "Counter web app in Gren",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gren make src/gren/Main.gren --output=dist/main.js && cp src/index.html dist"
+  },
+  "keywords": [],
+  "author": "Laurent Payot",
+  "license": "MIT",
+  "devDependencies": {
+    "gren-lang": "^0.3.0"
+  }
+}

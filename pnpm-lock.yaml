@@ -1,0 +1,45 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  gren-lang:
+    specifier: ^0.3.0
+    version: 0.3.0
+
+packages:
+
+  /follow-redirects@1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
+
+  /gren-compiler-library@0.3.0:
+    resolution: {integrity: sha512-CvcdoHYJuqwc4BUKvQPPhtegTUmW5I6rhQlKxxmu+qRbDYFeB/cypM3Xha3aqJr9l14JdmL5fMichENRqg3CBg==}
+    dependencies:
+      follow-redirects: 1.15.2
+      xdg-basedir: 5.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /gren-lang@0.3.0:
+    resolution: {integrity: sha512-Gl/0jckyK97BH/lUPj68vP4m05d1QTrLlhZ2ELQgKfDJu8PVKeG+LtRRkdpIzcncCfgR/htWdwt2UkwpPXzalA==}
+    hasBin: true
+    dependencies:
+      gren-compiler-library: 0.3.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /xdg-basedir@5.1.0:
+    resolution: {integrity: sha512-GCPAHLvrIH13+c0SuacwvRYj2SxJXQ4kaVTT5xgL3kPrz56XxkF21IGhjSE1+W0aw7gpBWRGXLCPnPby6lSpmQ==}
+    engines: {node: '>=12'}
+    dev: true
