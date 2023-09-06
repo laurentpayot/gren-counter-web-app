@@ -13,7 +13,7 @@ devDependencies:
     version: 4.4.9
   vite-plugin-gren:
     specifier: github:laurentpayot/vite-plugin-gren
-    version: github.com/laurentpayot/vite-plugin-gren/f93618c45b11693a038c88c99fd5516c8f31a3b6(vite@4.4.9)
+    version: github.com/laurentpayot/vite-plugin-gren/53885222ba408d7c9a10fc6d704f3f897981df9a(vite@4.4.9)
 
 packages:
 
@@ -582,13 +582,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/laurentpayot/vite-plugin-gren/f93618c45b11693a038c88c99fd5516c8f31a3b6(vite@4.4.9):
-    resolution: {tarball: https://codeload.github.com/laurentpayot/vite-plugin-gren/tar.gz/f93618c45b11693a038c88c99fd5516c8f31a3b6}
-    id: github.com/laurentpayot/vite-plugin-gren/f93618c45b11693a038c88c99fd5516c8f31a3b6
+  github.com/laurentpayot/vite-plugin-gren/53885222ba408d7c9a10fc6d704f3f897981df9a(vite@4.4.9):
+    resolution: {tarball: https://codeload.github.com/laurentpayot/vite-plugin-gren/tar.gz/53885222ba408d7c9a10fc6d704f3f897981df9a}
+    id: github.com/laurentpayot/vite-plugin-gren/53885222ba408d7c9a10fc6d704f3f897981df9a
     name: vite-plugin-gren
     version: 2.9.0-beta.1
-    prepare: true
-    requiresBuild: true
     peerDependencies:
       vite: ^4.0.0 || ^3.0.0 || ^2.0.0
     dependencies:
